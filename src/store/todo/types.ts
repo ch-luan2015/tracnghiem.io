@@ -1,7 +1,7 @@
 import {Todo} from "resources/todo";
 
 export type TodoState = {
-    info: Todo | null;
+    title: Todo | null;
   };
   export const ADD_TODO = "ADD_TODO";
   export const DELETE_TODO = "DELETE_TODO";

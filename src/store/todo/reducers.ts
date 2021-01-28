@@ -1,7 +1,8 @@
+import { title } from "process";
 import { TodoState, TodoActionTypes, ADD_TODO, DELETE_TODO } from "./types";
 
 
-const initialState: TodoState ={info:null};
+const initialState: TodoState ={title:null};
 
 
 export function todoReducer(
@@ -10,7 +11,8 @@ export function todoReducer(
 ):TodoState{
     switch (action.type) {
         case ADD_TODO:
-          return { info: action.payload };
+            return {
+              ...state,title};
     
         case DELETE_TODO:
           return { info: null };
