@@ -1,4 +1,3 @@
-import { title } from "process";
 import { TodoState, TodoActionTypes, ADD_TODO, DELETE_TODO } from "./types";
 
 
@@ -12,10 +11,10 @@ export function todoReducer(
     switch (action.type) {
         case ADD_TODO:
             return {
-              ...state,title};
+              ...state};
     
         case DELETE_TODO:
-          return { info: null };
+          return { ...state };
     
         default:
           return state;

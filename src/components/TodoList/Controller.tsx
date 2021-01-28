@@ -10,17 +10,12 @@ interface AddTodoProps {
 const AddTodoView: React.FC<AddTodoProps> = (props) => {
   const [todo, setTodo] = useState<AddTodoProps | {}>();
 
-  const addNewArticle = (e: React.FormEvent) => {
-    e.preventDefault();
-    addTodo(article);
-  };
+  // const addNewArticle = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   addTodo(article);
+  // };
 
-  return (
-    <form onSubmit={addNewArticle} className="Add-article">
-      <input type="text" id="title" placeholder="Title" onChange={handleArticleData} />
-      <button disabled={article === undefined ? true : false}>Add article</button>
-    </form>
-  );
+  return <View />;
 };
 
 export default AddTodoView;

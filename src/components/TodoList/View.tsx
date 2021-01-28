@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import styles from "./styles.module.scss";
 
 interface AddTodoViewProps {
   title?: string;
@@ -7,14 +8,16 @@ interface AddTodoViewProps {
 const AddTodoView: React.FC<AddTodoViewProps> = (props) => {
   const [todo, setTodo] = useState<AddTodoViewProps | {}>();
 
-
-  
   return (
-    <form onSubmit={addNewArticle} className="Add-article">
-      <input type="text" id="title" placeholder="Title" onChange={handleArticleData} />
-      <button disabled={article === undefined ? true : false}>Add article</button>
+    <form className={styles.Add_article}>
+      <input type="text" id="title" placeholder="Title" />
+      <button>Add article</button>
     </form>
   );
 };
 
 export default AddTodoView;
+
+// onSubmit={addNewArticle}
+// onChange={handleArticleData}
+// disabled={title === undefined ? true : false}
