@@ -9,7 +9,7 @@ export const LOGOUT = "LOGOUT";
 
 interface LoginAction {
   type: typeof LOGIN;
-  payload: User;
+  payload: User;  
 }
 
 interface LogoutAction {
