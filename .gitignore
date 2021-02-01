@@ -4,10 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-
+#css
+/styles/tailwind.output.css
 # testing
 /coverage
-
+tailw
 # production
 /build
 

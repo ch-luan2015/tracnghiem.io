@@ -9,6 +9,8 @@ import thunk from "redux-thunk";
 
 import reportWebVitals from "./reportWebVitals";
 
+import "./styles/tailwind.output.css";
+
 const store: Store<ArticleState, ArticleAction> & {
   dispatch: DispatchType;
 } = createStore(reducer, applyMiddleware(thunk));
