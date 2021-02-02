@@ -1,0 +1,20 @@
+{
+    "id": 0,
+    "title": "string",
+    "description": "string",
+    "questions": [
+      {
+        "id": 0,
+        "examId": 0,
+        "content": "string",
+        "answerOptions": [
+          {
+            "id": 0,
+            "content": "string",
+            "questionId": 0,
+            "isCorrect": true
+          }
+        ]
+      }
+    ]
+  }
