@@ -1,0 +1,69 @@
+{
+  "id": 0,
+  "title": "De 1",
+  "description": "De toan so 1",
+  "questions": [
+    {
+      "id": 0,
+      "examId": 0,
+      "content": "Tính biểu thức sau: a=1+10. Giá trị của a là? ",
+      "answerOptions": [
+        {
+          "id": 0,
+          "content": "11",
+          "questionId": 0,
+          "isCorrect": true
+        },
+        {
+          "id": 1,
+          "content": "-11",
+          "questionId": 1,
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "content": "12",
+          "questionId": 2,
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "content": "-13",
+          "questionId": 3,
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "examId": 0,
+      "content": "Tính biểu thức sau: b=10+10. Giá trị của b là? ",
+      "answerOptions": [
+        {
+          "id": 0,
+          "content": "11",
+          "questionId": 0,
+          "isCorrect": true
+        },
+        {
+          "id": 1,
+          "content": "-11",
+          "questionId": 1,
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "content": "12",
+          "questionId": 2,
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "content": "-13",
+          "questionId": 3,
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
