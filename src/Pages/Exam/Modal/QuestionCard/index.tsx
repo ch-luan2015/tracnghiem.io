@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Radio, RadioGroup, Stack, Heading, Text, Box } from "@chakra-ui/react";
+import { Radio, RadioGroup, Heading, Text, Box } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 
 import { Question } from "resource/model/question";
+import { Input, Stack, Select, Checkbox } from "@chakra-ui/react";
 
 interface QuestionProps {
   question: Question;
@@ -17,25 +18,25 @@ export default function QuestionCard(props: QuestionProps) {
   console.log(props.index);
 
   return (
-    <div>
-      <Heading as="h4" size="md" isTruncated>
-        <Text as="span">{props.index} . </Text> {props.question.content}
+    <Box bg="white" rounded="lg" p="2em" w="60%" my="2rem" mx="auto" shadow="lg">
+      <Heading fontSize="xl" color="Teal" my="1rem" w="100%">
+        {props.index}.{props.question.content}
       </Heading>
-      <RadioGroup onChange={handleChange} value={answerChoice}>
-        <SimpleGrid columns={2} spacing={10}>
+
+      <RadioGroup onChange={handleChange} value={answerChoice} mt="2rem">
+        <SimpleGrid columns={2} spacing={5}>
           {props.question.answerOptions.map((a, index: number) => {
             const indexString = index.toString();
-            // console.log(a, indexString, answerChoice);
             return (
-              <Box bg="blue.300" height={12}>
+              <Box height={8}>
                 <Radio key={index} value={indexString}>
-                  {a.content}
+                    <Text></Text>{a.content}
                 </Radio>
               </Box>
             );
           })}
         </SimpleGrid>
       </RadioGroup>
-    </div>
+    </Box>
   );
 }

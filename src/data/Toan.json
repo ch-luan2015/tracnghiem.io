@@ -6,29 +6,29 @@
     {
       "id": 0,
       "examId": 0,
-      "content": "Tính biểu thức sau: a=1+10. Giá trị của a là? ",
+      "content": "Cho hàm số y =f(x) liên tục trên R và có bảng biến thiên như sau. Kết luận nào sau đây đúng.",
       "answerOptions": [
         {
           "id": 0,
-          "content": "11",
+          "content": "A. Hàm số có hai điểm cực trị.",
           "questionId": 0,
           "isCorrect": true
         },
         {
           "id": 1,
-          "content": "-11",
+          "content": "B. Hàm số đạt cực tiểu tại x=1.",
           "questionId": 1,
           "isCorrect": false
         },
         {
           "id": 2,
-          "content": "12",
+          "content": "C. Hàm số có ba điểm cực trị.",
           "questionId": 2,
           "isCorrect": false
         },
         {
           "id": 3,
-          "content": "-13",
+          "content": "D. Hàm số đạt cực đại tại x =2.",
           "questionId": 3,
           "isCorrect": false
         }
