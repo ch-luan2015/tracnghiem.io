@@ -18,9 +18,9 @@ export default function QuestionCard(props: QuestionProps) {
   console.log(props.index);
 
   return (
-    <Box bg="white" rounded="lg" p="2em" w="60%" my="2rem" mx="auto" shadow="lg">
+    <Box bg="white" rounded="lg" p="1rem" my="2rem" mx="auto" w="90%" shadow="lg">
       <Heading fontSize="xl" color="Teal" my="1rem" w="100%">
-        {props.index}.{props.question.content}
+        {props.index}. {props.question.content}
       </Heading>
 
       <RadioGroup onChange={handleChange} value={answerChoice} mt="2rem">
@@ -30,7 +30,9 @@ export default function QuestionCard(props: QuestionProps) {
             return (
               <Box height={8}>
                 <Radio key={index} value={indexString}>
-                    <Text></Text>{a.content}
+                  <Text textAlign="justify" fontSize="lg" fontWeight="md" color="gray.900">
+                    {a.content}
+                  </Text>
                 </Radio>
               </Box>
             );

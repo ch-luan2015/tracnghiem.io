@@ -1,15 +1,28 @@
 import React from "react";
 import mathData from "../../data/Toan.json";
-import QuestionCard from "../Exam/Modal/QuestionCard";
+import QuestionCard from "./QuestionCard";
+import ChooseTable from "./ChooseTable";
 import { Exam } from "resource/model/question";
-import { Box, Flex } from "@chakra-ui/react";
+import { Flex, Box, Spacer } from "@chakra-ui/react";
+
 export default function index() {
   const exam = mathData as Exam;
+
   return (
-    <Box bg="gray.300" h="100vh">
-      {exam.questions.map((q, index) => (
-        <QuestionCard question={q} index={index + 1} />
-      ))}
-    </Box>
+    <Flex bg="gray.300" h="100vh" wrap="wrap" direction="row" justify="flex-start" align="flex-start">
+      <Flex flex="1 0 0">
+        <Spacer />
+        <ChooseTable index={exam.questions.length} />
+      </Flex>
+      <Box flex="2 0 0">
+        {exam.questions.map((q, index) => (
+          <QuestionCard question={q} index={index + 1} />
+        ))}
+      </Box>
+
+      <Box flex="1 0 0">
+        <ChooseTable index={exam.questions.length} />
+      </Box>
+    </Flex>
   );
 }
