@@ -1,5 +1,5 @@
 import React from "react";
-import { useRadio, Box } from "@chakra-ui/react";
+import { useRadio, Box, Flex } from "@chakra-ui/react";
 
 export default function RadioCard(props: any) {
   const { getInputProps, getCheckboxProps } = useRadio(props);
@@ -8,27 +8,13 @@ export default function RadioCard(props: any) {
   const checkbox = getCheckboxProps();
 
   return (
-    <Box as="label">
+    <Flex as="label" w="2rem" h="2rem" boxShadow="md" rounded="md" bg="white" textAlign="center" justify="flex-start" wrap="wrap">
       <input {...input} />
-      <Box
-        {...checkbox}
-        cursor="pointer"
-        borderWidth="1px"
-        borderRadius="full"
-        boxShadow="md"
-        _checked={{
-          bg: "teal.600",
-          color: "white",
-          borderColor: "teal.600",
-        }}
-        _focus={{
-          boxShadow: "outline",
-        }}
-        px={5}
-        py={3}
-      >
-        {props.children}
+      <Box {...checkbox} w="100%" h="100%">
+        <Box color="gray.400" fontSize="lg" fontWeight="bold" mt="0.2rem">
+          {props.children}
+        </Box>
       </Box>
-    </Box>
+    </Flex>
   );
 }

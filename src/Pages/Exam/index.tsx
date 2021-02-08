@@ -22,8 +22,9 @@ export default function index() {
         ))}
       </Box>
 
-      <Box flex="1 0 0">
+      <Box flex="1 0 0" flexWrap="wrap">
         <ChooseTable index={exam.questions.length} />
+
         <Example />
       </Box>
     </Flex>
