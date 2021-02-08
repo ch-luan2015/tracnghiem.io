@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Question } from "resource/model/question";
-import { Input, Stack, Select, Checkbox, SimpleGrid, Heading, Text, Box, Radio, RadioGroup } from "@chakra-ui/react";
+import { useRadio, Input, Stack, Select, Checkbox, SimpleGrid, Heading, Text, Box, Radio, RadioGroup } from "@chakra-ui/react";
 
-function RadioCard(props) {
+export default function RadioCard(props: any) {
   const { getInputProps, getCheckboxProps } = useRadio(props);
 
   const input = getInputProps();
@@ -35,29 +35,3 @@ function RadioCard(props) {
 }
 
 // Step 2: Use the `useRadioGroup` hook to control a group of custom radios.
-function Example() {
-  const options = ["react", "vue", "svelte"];
-
-  const { getRootProps, getRadioProps } = useRadioGroup({
-    name: "framework",
-    defaultValue: "react",
-    onChange: console.log,
-  });
-
-  const group = getRootProps();
-
-  return (
-    <HStack {...group}>
-      {options.map((value) => {
-        const radio = getRadioProps({ value });
-        return (
-          <RadioCard key={value} {...radio}>
-            {value}
-          </RadioCard>
-        );
-      })}
-    </HStack>
-  );
-}
-
-render(<Example />);
