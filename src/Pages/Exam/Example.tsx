@@ -1,6 +1,6 @@
 import React from "react";
 import { useRadioGroup, HStack } from "@chakra-ui/react";
-import RadioCard from "../../Components/RadioCard";
+import RadioCard from "components/RadioCard";
 
 export default function Example() {
   const options = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];

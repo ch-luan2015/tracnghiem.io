@@ -4,7 +4,6 @@ import QuestionCard from "./QuestionCard";
 import ChooseTable from "./ChooseTable";
 import { Exam } from "resource/model/question";
 import { Flex, Box, Spacer, useRadioGroup, HStack } from "@chakra-ui/react";
-// import RadioCard from "../../Components/RadioCard";
 import Example from "./Example";
 
 export default function index() {
