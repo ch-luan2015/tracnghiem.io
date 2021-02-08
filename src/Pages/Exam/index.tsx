@@ -4,32 +4,9 @@ import QuestionCard from "./QuestionCard";
 import ChooseTable from "./ChooseTable";
 import { Exam } from "resource/model/question";
 import { Flex, Box, Spacer, useRadioGroup, HStack } from "@chakra-ui/react";
-import RadioCard from "../../components/RadioCard";
+// import RadioCard from "../../Components/RadioCard";
+import Example from "./Example";
 
-function Example() {
-  const options = ["react", "vue", "svelte"];
-
-  const { getRootProps, getRadioProps } = useRadioGroup({
-    name: "framework",
-    defaultValue: "react",
-    onChange: console.log,
-  });
-
-  const group = getRootProps();
-
-  return (
-    <HStack {...group}>
-      {options.map((value: any) => {
-        const radio = getRadioProps({ value });
-        return (
-          <RadioCard key={value} {...radio}>
-            {value}
-          </RadioCard>
-        );
-      })}
-    </HStack>
-  );
-}
 export default function index() {
   const exam = mathData as Exam;
 

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Question } from "resource/model/question";
-import { useRadio, Input, Stack, Select, Checkbox, SimpleGrid, Heading, Text, Box, Radio, RadioGroup } from "@chakra-ui/react";
+import React from "react";
+import { useRadio, Box } from "@chakra-ui/react";
 
 export default function RadioCard(props: any) {
   const { getInputProps, getCheckboxProps } = useRadio(props);
@@ -15,7 +14,7 @@ export default function RadioCard(props: any) {
         {...checkbox}
         cursor="pointer"
         borderWidth="1px"
-        borderRadius="md"
+        borderRadius="full"
         boxShadow="md"
         _checked={{
           bg: "teal.600",
@@ -33,5 +32,3 @@ export default function RadioCard(props: any) {
     </Box>
   );
 }
-
-// Step 2: Use the `useRadioGroup` hook to control a group of custom radios.
