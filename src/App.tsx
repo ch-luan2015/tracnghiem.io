@@ -1,11 +1,9 @@
-import * as React, {createContext} from "react";
+import * as React from "react";
 import { ChakraProvider, theme, CSSReset } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { createBreakpoints } from "@chakra-ui/theme-tools";
-
-
-
 import Home from "./Pages/Home";
+import StoreProvider from "./ultis/store";
 const breakpoints = createBreakpoints({
   sm: "30em",
   md: "48em",
@@ -19,10 +17,14 @@ const newTheme = {
   breakpoints,
 };
 
-export const doQuestion = createContext();
-export const App = () => (
-  <ChakraProvider theme={newTheme}>
-    <CSSReset />
-    <Home />
-  </ChakraProvider>
-);
+function App() {
+  return (
+    <StoreProvider>
+      <ChakraProvider theme={newTheme}>
+        <CSSReset />
+        <Home />
+      </ChakraProvider>
+    </StoreProvider>
+  );
+}
+export default App;

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Question } from "resource/model/question";
-import { Input, Stack, Select, Checkbox, SimpleGrid, Heading, Text, Box } from "@chakra-ui/react";
+import React from "react";
+import { Heading, Box } from "@chakra-ui/react";
 
 interface ChooseTableProps {
   index?: number;

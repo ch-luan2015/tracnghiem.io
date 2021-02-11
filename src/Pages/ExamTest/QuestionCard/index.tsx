@@ -3,7 +3,6 @@ import { Radio, RadioGroup, Heading, Text, Box } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 
 import { Question } from "resource/model/question";
-import { Input, Stack, Select, Checkbox } from "@chakra-ui/react";
 
 interface QuestionProps {
   question: Question;
@@ -15,7 +14,6 @@ export default function QuestionCard(props: QuestionProps) {
   const handleChange = (value: number | string) => {
     setAnswerChoice(value);
   };
-  console.log(props.index);
 
   return (
     <Box bg="white" rounded="lg" p="1rem" my="2rem" mx="auto" w="90%" shadow="lg">
@@ -28,8 +26,8 @@ export default function QuestionCard(props: QuestionProps) {
           {props.question.answerOptions.map((a, index: number) => {
             const indexString = index.toString();
             return (
-              <Box height={8}>
-                <Radio key={index} value={indexString}>
+              <Box height={8} key={index}>
+                <Radio value={indexString}>
                   <Text textAlign="justify" fontSize="lg" fontWeight="md" color="gray.900">
                     {a.content}
                   </Text>
