@@ -1,0 +1,51 @@
+{
+  "tag": { "title": "Kiểm tra môn Toán - HOCMAI" },
+  "title": "Bài tập tự luyện",
+  "subtitle": "Chương 1. Phép biến đổi hình học",
+  "questions": [
+    {
+      "content": "\n    Cho tam giác ABC. Gọi M, N, P lần lượt là trung điểm của các cạnh BC; CA; AB. Phép vị tự biến tam giác ABC thành tam giác MNP là phép vị tự:",
+      "info": "\n\t1.\n      ",
+      "answers": [
+        { "content": "\n                <label for=\"resp105489_292511\">\n                    <span class=\"under_an\">A</span>. Tâm O tỉ số k = 1/2. ( O là tâm của tam giác ABC ).                </label>\n            ", "id": "resp105489_292511", "value": "292511" },
+        { "content": "\n                <label for=\"resp105489_292513\">\n                    <span class=\"under_an\">B</span>. Tâm H tỉ số k = -2 với H là trực tâm của tam giác ABC.                </label>\n            ", "id": "resp105489_292513", "value": "292513" },
+        { "content": "\n                <label for=\"resp105489_292510\">\n                    <span class=\"under_an\">C</span>. Tâm A, tỉ số k = 2.                </label>\n            ", "id": "resp105489_292510", "value": "292510" },
+        { "content": "\n                <label for=\"resp105489_292512\">\n                    <span class=\"under_an\">D</span>. Tâm G tỉ số k = -1/2 với G là trọng tâm của tam giác ABC.                </label>\n            ", "id": "resp105489_292512", "value": "292512" }
+      ]
+    },
+    {
+      "content": "\n    Trong mặt phẳng tọa độ Oxy cho parabol (P) có phương trình: \\[y = ax^2 \\] trong các parabol sau parabol nào bằng (P)?",
+      "info": "\n\t2.\n      ",
+      "answers": [
+        { "content": "\n                <label for=\"resp106965_292483\">\n                    <span class=\"under_an\">A</span>. \\[y = ax^2 + bx \\]<br><br>                </label>\n            ", "id": "resp106965_292483", "value": "292483" },
+        {
+          "content": "\n                <label for=\"resp106965_292482\">\n                    <span class=\"under_an\">B</span>. \\[y = ax^2 + bx + c\\] ( a <img width=\"15\" vspace=\"0\" hspace=\"0\" height=\"14\" border=\"0\" align=\"middle\" title=\"001.1\" alt=\"001.1\" src=\"http://hocmai.vn/file.php/143/Anh/Co_ban/Hinh_hoc/001.1.gif\"> 0 ).<br><br>                </label>\n            ",
+          "id": "resp106965_292482",
+          "value": "292482"
+        },
+        { "content": "\n                <label for=\"resp106965_292485\">\n                    <span class=\"under_an\">C</span>. \\[y = ax^2 + 1\\]<br><br>                </label>\n            ", "id": "resp106965_292485", "value": "292485" },
+        { "content": "\n                <label for=\"resp106965_292484\">\n                    <span class=\"under_an\">D</span>. \\[y = bx + c\\]<br><br>                </label>\n            ", "id": "resp106965_292484", "value": "292484" }
+      ]
+    },
+    {
+      "content": "\n    Trong mặt phẳng với hệ tọa độ Oxy cho đường tròn (T) có phương trình:\\[\\left( {x - 2} \\right)^2 + \\left( {y + 1} \\right)^2 = 4\\]. Phép vị tự V(O; 4) biến đường tròn (T) thành đường tròn (T') có phương trình là:",
+      "info": "\n\t3.\n      ",
+      "answers": [
+        { "content": "\n                <label for=\"resp105490_292577\">\n                    <span class=\"under_an\">A</span>. \\[\\left( {x - 12} \\right)^2 + \\left( {y + 8} \\right)^2 = 16\\]                </label>\n            ", "id": "resp105490_292577", "value": "292577" },
+        { "content": "\n                <label for=\"resp105490_292578\">\n                    <span class=\"under_an\">B</span>. \\[\\left( {x + 8} \\right)^2 + \\left( {y - 4} \\right)^2 = 64\\]                </label>\n            ", "id": "resp105490_292578", "value": "292578" },
+        { "content": "\n                <label for=\"resp105490_292576\">\n                    <span class=\"under_an\">C</span>. \\[\\left( {x - 4} \\right)^2 + \\left( {y + 2} \\right)^2 = 16\\]                </label>\n            ", "id": "resp105490_292576", "value": "292576" },
+        { "content": "\n                <label for=\"resp105490_292575\">\n                    <span class=\"under_an\">D</span>. \\[\\left( {x - 8} \\right)^2 + \\left( {y + 4} \\right)^2 = 64\\]                </label>\n            ", "id": "resp105490_292575", "value": "292575" }
+      ]
+    },
+    {
+      "content": "\n    Trong mặt phẳng với hệ tọa độ Oxy, cho hai đường tròn \\[(T_1 );\\,\\,\\left( {T_2 } \\right)\\] bằng nhau và có phương trình lần lượt là: \\[\\left( {x - 1} \\right)^2 + \\left( {y + 2} \\right)^2 = 16\\] và \\[\\left( {x + 3} \\right)^2 + \\left( {y - 4} \\right)^2 = 16\\]. Giả sử f là phép tịnh tiến theo vecto \\[\\vec{u}} \\] biến \\[(T_1 )\\] thành \\[(T_2 )\\] khi đó tọa độ của \\[\\vec{u}} \\] là:",
+      "info": "\n\t4.\n      ",
+      "answers": [
+        { "content": "\n                <label for=\"resp104885_290293\">\n                    <span class=\"under_an\">A</span>. (3; -5)                </label>\n            ", "id": "resp104885_290293", "value": "290293" },
+        { "content": "\n                <label for=\"resp104885_290291\">\n                    <span class=\"under_an\">B</span>. (-4; 6)                </label>\n            ", "id": "resp104885_290291", "value": "290291" },
+        { "content": "\n                <label for=\"resp104885_290294\">\n                    <span class=\"under_an\">C</span>. (8; -10)                </label>\n            ", "id": "resp104885_290294", "value": "290294" },
+        { "content": "\n                <label for=\"resp104885_290292\">\n                    <span class=\"under_an\">D</span>. (4; -6)                </label>\n            ", "id": "resp104885_290292", "value": "290292" }
+      ]
+    }
+  ]
+}
